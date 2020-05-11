@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="200" prefWidth="150" id="mainFrame" fx:controller="timer.TimerController">
+	<padding>
+		
+	</padding>
+	
+	<children>
+		<ProgressIndicator fx:id="timeIndicator">
+			
+		</ProgressIndicator>
+		<Label text="  :  "/>
+	</children>
+</VBox>
+
