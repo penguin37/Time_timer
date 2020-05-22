@@ -26,7 +26,7 @@ public class AppMain extends Application{
 		primaryStage.initStyle(StageStyle.TRANSPARENT);
 		primaryStage.setAlwaysOnTop(true);
 		
-
+		//클릭시 투명도 0으로 사라지고 5초 후 다시 보여진다.
 		scene.setOnMouseClicked(e->{
 			primaryStage.setOpacity(0);
 			System.out.println("dd");
@@ -40,6 +40,7 @@ public class AppMain extends Application{
 			timer.schedule(task, 5000);
 		});
 		
+		//마우스 드래그로 위치 이동
 		scene.setOnMouseDragged(e->{
 			primaryStage.setX(e.getScreenX());
 			primaryStage.setY(e.getScreenY());
