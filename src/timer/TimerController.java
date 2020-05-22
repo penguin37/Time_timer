@@ -15,7 +15,7 @@ public class TimerController implements Initializable{
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		timeIndicator.setProgress(0.5);
+		timeIndicator.setProgress(1);
 		Timer timer = new Timer();
 		TimerTask task = new TimerTask() {
 			@Override
@@ -23,6 +23,6 @@ public class TimerController implements Initializable{
 				Platform.runLater(()->timeIndicator.setProgress(timeIndicator.getProgress()-0.01));
 			}
 		};
-		timer.schedule(task, 0, 100);
+		timer.schedule(task, 0, 1000);
 	}
 }
